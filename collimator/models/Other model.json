@@ -44,9 +44,6 @@
     "references": {}
   },
   "configuration": {
-    "__developer_options": {
-      "disable_firejail": false
-    },
     "continuous_time_result_interval": 0,
     "events_handling": "normal",
     "record_mode": "all",
