@@ -1,0 +1,167 @@
+{
+  "uuid": "39827c59-f5e0-4754-9dd8-146a07720231",
+  "name": "Adder Block",
+  "diagram": {
+    "links": [
+      {
+        "dst": {
+          "node": "ccf88ac9-fc0e-43f7-aa88-3335598e60a0",
+          "port": 0
+        },
+        "src": {
+          "node": "54539ae5-f1db-4f96-ba2a-147684bc7330",
+          "port": 0
+        },
+        "uiprops": {
+          "link_type": {
+            "connection_method": "direct_to_block"
+          },
+          "segments": []
+        },
+        "uuid": "04a3c7c0-873d-4843-8125-2c82fcdb05ed"
+      },
+      {
+        "dst": {
+          "node": "ccf88ac9-fc0e-43f7-aa88-3335598e60a0",
+          "port": 1
+        },
+        "src": {
+          "node": "bec2369a-a4ea-4f35-9415-a55bd4ab8fe5",
+          "port": 0
+        },
+        "uiprops": {
+          "link_type": {
+            "connection_method": "direct_to_block"
+          },
+          "segments": []
+        },
+        "uuid": "22a1c011-22e5-410d-8ff2-b908e97e11b6"
+      }
+    ],
+    "nodes": [
+      {
+        "inputs": [
+          {
+            "kind": "dynamic",
+            "name": "in_0"
+          },
+          {
+            "kind": "dynamic",
+            "name": "in_1"
+          }
+        ],
+        "name": "Adder_0",
+        "outputs": [
+          {
+            "kind": "static",
+            "name": "out_0"
+          }
+        ],
+        "parameters": {
+          "operators": {
+            "is_string": true,
+            "value": "++"
+          }
+        },
+        "type": "core.Adder",
+        "uiprops": {
+          "port_alignment": "spaced",
+          "x": 568,
+          "y": 288
+        },
+        "uuid": "ccf88ac9-fc0e-43f7-aa88-3335598e60a0"
+      },
+      {
+        "inputs": [],
+        "name": "CosineWave_0",
+        "outputs": [
+          {
+            "kind": "static",
+            "name": "out_0"
+          }
+        ],
+        "parameters": {
+          "amplitude": {
+            "value": "1.0"
+          },
+          "bias": {
+            "value": "0.0"
+          },
+          "frequency": {
+            "value": "1.0"
+          },
+          "phase": {
+            "value": "0.0"
+          }
+        },
+        "time_mode": "agnostic",
+        "type": "core.CosineWave",
+        "uiprops": {
+          "port_alignment": "spaced",
+          "x": 408,
+          "y": 240
+        },
+        "uuid": "54539ae5-f1db-4f96-ba2a-147684bc7330"
+      },
+      {
+        "inputs": [],
+        "name": "CosineWave_1",
+        "outputs": [
+          {
+            "kind": "static",
+            "name": "out_0"
+          }
+        ],
+        "parameters": {
+          "amplitude": {
+            "value": "1.0"
+          },
+          "bias": {
+            "value": "0.0"
+          },
+          "frequency": {
+            "value": "10"
+          },
+          "phase": {
+            "value": "0.0"
+          }
+        },
+        "time_mode": "agnostic",
+        "type": "core.CosineWave",
+        "uiprops": {
+          "port_alignment": "spaced",
+          "x": 408,
+          "y": 352
+        },
+        "uuid": "bec2369a-a4ea-4f35-9415-a55bd4ab8fe5"
+      }
+    ],
+    "uuid": "80588949-17fd-4ef3-a4ed-a8bb0091ea1b"
+  },
+  "submodels": {
+    "diagrams": {},
+    "references": {}
+  },
+  "configuration": {
+    "__developer_options": {
+      "disable_firejail": false
+    },
+    "continuous_time_result_interval": 0,
+    "events_handling": "normal",
+    "record_mode": "all",
+    "sample_time": 0.1,
+    "solver": {
+      "absolute_tolerance": 0.000001,
+      "first_step": 0.0001,
+      "fixed_step": 0.01,
+      "max_step": 1000000,
+      "method": "RK45",
+      "min_step": 0,
+      "relative_tolerance": 0.001,
+      "type": "variable_step"
+    },
+    "stop_time": 10,
+    "worker_type": "any",
+    "workspace": {}
+  }
+}
