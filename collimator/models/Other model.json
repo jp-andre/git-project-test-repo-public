@@ -1,0 +1,68 @@
+{
+  "uuid": "344f5f87-57bc-492f-85f9-fb8bd08af7ea",
+  "name": "Other model",
+  "diagram": {
+    "links": [],
+    "nodes": [
+      {
+        "inputs": [],
+        "name": "CosineWave_0",
+        "outputs": [
+          {
+            "kind": "static",
+            "name": "out_0"
+          }
+        ],
+        "parameters": {
+          "amplitude": {
+            "value": "1.0"
+          },
+          "bias": {
+            "value": "0.0"
+          },
+          "frequency": {
+            "value": "1.0"
+          },
+          "phase": {
+            "value": "0.0"
+          }
+        },
+        "time_mode": "agnostic",
+        "type": "core.CosineWave",
+        "uiprops": {
+          "port_alignment": "spaced",
+          "x": 440,
+          "y": 368
+        },
+        "uuid": "2181d522-2e98-4e7d-ab49-bf36a255764f"
+      }
+    ],
+    "uuid": "43e330fd-830a-4bae-a4a7-d590365fd2c4"
+  },
+  "submodels": {
+    "diagrams": {},
+    "references": {}
+  },
+  "configuration": {
+    "__developer_options": {
+      "disable_firejail": false
+    },
+    "continuous_time_result_interval": 0,
+    "events_handling": "normal",
+    "record_mode": "all",
+    "sample_time": 0.1,
+    "solver": {
+      "absolute_tolerance": 0.000001,
+      "first_step": 0.0001,
+      "fixed_step": 0.01,
+      "max_step": 1000000,
+      "method": "RK45",
+      "min_step": 0,
+      "relative_tolerance": 0.001,
+      "type": "variable_step"
+    },
+    "stop_time": 10,
+    "worker_type": "any",
+    "workspace": {}
+  }
+}
