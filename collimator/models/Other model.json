@@ -10,7 +10,8 @@
         "outputs": [
           {
             "kind": "static",
-            "name": "out_0"
+            "name": "out_0",
+            "record": true
           }
         ],
         "parameters": {
